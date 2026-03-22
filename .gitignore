@@ -55,4 +55,5 @@ ENV/
 
 # Obsidian
 .obsidian/workspace
-.obsidian/workspace.json
+.obsidian/workspace.jsonobsidian-config
+openclaw-config
