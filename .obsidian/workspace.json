@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "7eaeabc073d0deea",
+    "type": "split",
+    "children": [
+      {
+        "id": "c74843307781d35a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa70120fc3c6f1b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Obsidian-关系图谱分析报告.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian-关系图谱分析报告"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d4a4e1703e6a8690",
+    "type": "split",
+    "children": [
+      {
+        "id": "12bc634058f7a32a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6f06ab9d7adc6cc8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "eea76369a8401be9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "8f1539d10010cde9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "62e9941251535a58",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d76c82f9cec58ad",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d49ec61ba63fcbe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Obsidian-关系图谱分析报告.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Obsidian-关系图谱分析报告 的反向链接列表"
+            }
+          },
+          {
+            "id": "8e37730b7f6b4b49",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Obsidian-关系图谱分析报告.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Obsidian-关系图谱分析报告 的出链列表"
+            }
+          },
+          {
+            "id": "67fdd47714ff52aa",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "cd590c890106ad1f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Obsidian-关系图谱分析报告.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Obsidian-关系图谱分析报告 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "aa70120fc3c6f1b5",
+  "lastOpenFiles": [
+    "文件清单报告.md",
+    "测试关系图谱文件.md",
+    "SwordBob-上传到GitHub.sh",
+    "Obsidian-关系图谱分析报告.md",
+    "LICENSE",
+    "README.md",
+    "GITHUB上传手动指南.md",
+    "upload-to-github.sh",
+    "SKILL.md",
+    "memory/2026-03-22.md",
+    "references",
+    "skills/knowledge-evolution-tracker",
+    "uninstall-knowledge-maintenance.sh",
+    "check-maintenance-status.sh",
+    "knowledge-maintenance-now.sh",
+    "knowledge-maintenance-logs/weekly-2026-03-22.log",
+    "knowledge-backups",
+    "knowledge-evolution-reports/knowledge-evolution-2026-03-22.md",
+    "知识演化跟踪系统指南.md",
+    "memory/2026-03-14.md",
+    "软考高项-10 周冲刺计划.md",
+    "关系图谱工具汇总.md",
+    "2026-03-22.md",
+    "未命名.canvas",
+    "禅宗实践指导手册.md"
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "snapshots": [
+    {
+      "id": "2026-03-22",
+      "timestamp": "2026-03-22T15:23:31.141706",
+      "file_count": 45,
+      "total_size": 322758,
+      "files": {
+        ".trash/2026-03-22.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "AGENTS.md": "3ecae6a107899f284728bf1aa406c75d141773f9f380ba39ba378b5e9fa28f4c",
+        "BOOTSTRAP.md": "5c4cb81099167dc7901bf16d7d4b8fd4bdbb37d2ec57437952f9409f19b88e39",
+        "HEARTBEAT.md": "dac422286075ba178e9bae58154cc0ae8749a66854e438c9c58e8eb91f22c126",
+        "IDENTITY.md": "1379f924cf4b4d6d0a306ecc2544a913dab706a1325fcf8eb9b267686ee8551c",
+        "MEMORY.md": "f004530a81d59e8bdaf31157c0089d330c89396f729771027affb837034a22fe",
+        "Obsidian-Git-集成指南.md": "880d589bfd93600b9faab359688786bede8ca28c3b81c2b49531f18b325bdf42",
+        "Obsidian-关系图谱分析报告.md": "ee12928e9a62cb2169aa0d7eb50cb0ea7bcde19e228b0da7d236dc9e199b42d9",
+        "Obsidian-工作空间关联指南.md": "0784be337194dc14593be3cc58dc7536e0e07973b0e2425af189a5b92f7dd6db",
+        "OpenClaw 完全安装指南.md": "b1e1fe7e5800b6da80e29e69c962d71aeafaf3ab1737aaf716936813a36aa72a",
+        "OpenClaw_防止睡眠指南.md": "24044bd38afb742ee258d41a514f2c6fa7957e1e64dd1cb8ed59a4f7a182bac3",
+        "PDF拆分指南.md": "fe0c47a6efb70731301f11e250e9bc6a34b778b006fe245cb577737da21bac79",
+        "README-Obsidian-Git.md": "d0a176974a3991abf01572dbb6baa228acf576274a780293efafe685ea83f74e",
+        "SOUL.md": "95c467f710183b2c0397c29ec4ef886bb723671a39ee767dc4d59165f723b68f",
+        "TOOLS.md": "78f3e26b8625ea283c615cec291d4978da5f9f01df730628c5c42094418b8dc2",
+        "USER.md": "178a5807bd2e6ace25b80a366f0f7d8d3f354a47f577c4ab0092397456b8738f",
+        "memory/2026-03-14.md": "97a300b01863d69c7df718bf7a7703e6468e8d305e308b7b4eb1c88c71c376a6",
+        "memory/siri-messages.md": "0d7f830a0a7d5e519ed5d195d62fd4c03f07cf217537ef997f2f00bb832428c0",
+        "pdf-split-skill/README.md": "60daf1e2e02be13c19c96be4961c0b5367b7dc3cf85b266d1b451a510f289a27",
+        "pdf-split-skill/SKILL.md": "1603c0c948cdb0329347e83c9b0a1718844669df627977870fa08ea4f0a2b1bd",
+        "skills/ruankao-helper/SKILL.md": "fe8e544222c8266e5986d98da596d97190fbac92a5061a71da438214de57679c",
+        "skills/using-superpowers/SKILL.md": "7d392283c4932ca5c0c50bd8469ab513622428eb28a7606ed6b4788a399e9f6d",
+        "七支坐法与数息观详解.md": "c254413bac2e7decba706c32de62a4784563dae4cf963d81caad5302bd41d83d",
+        "信息系统项目管理师错题本.md": "561d035c83d78cc7492ed1842169a00855d360cfbb100b7f3c2e7ddca6b8127b",
+        "关系图谱工具汇总.md": "7e03e37a3b4cda15ab6917f2332e93c113816d5dc62ad274048cea08afb316ff",
+        "存档系统说明.md": "7f172b550c23a2618d89466f98d7839496aa2e2d638c0b20f75ffd21ad381f39",
+        "按章节拆分结果/官方教材章节索引.md": "54c1d061521a1d0e6f9bf3961cf9c177d83df2c9cc4fd909e3c4870d66178690",
+        "查看隐藏文件指南.md": "56feafd1e77613c61f850cec49feaa93ce4ddddda184173fb5c38e27e5cec73d",
+        "知识演化跟踪系统指南.md": "3a926c97b16d7c4fa64f610b898a68072831dd7b078dcfd89f81689cafef1215",
+        "禅宗修炼指南.md": "4f3f55d0ca2d60c253487e36ea4d6ede31e3e76f4a65ef936ab299b758539878",
+        "禅宗实践指导手册.md": "6c4a3d28581644cafdbfef471eae342290731c18ea7ee2fb28f688259174610e",
+        "禅宗话头参究详解.md": "35b7636025acc0c28ab0385810d5fe52a253bc0bcd2d60c83560014664aea23f",
+        "第1-2章学习资料+练习题.md": "f095aac12cf4ef55772d1a124217eda82e2690bdf4964b9aaa310786159fab9a",
+        "第11-18章核心知识点总结.md": "d482bd970594117236cea588d2eac1155cb0552105cd3e7bdb32f9343c95a94d",
+        "第19-24章核心知识点总结.md": "41df45f876d832de541ced2bf28de9e7049296995cc9da5dda965d0f805a80b1",
+        "第3-4章学习资料+练习题.md": "366d7ac41e472ae4e8b7417b1909439248cb609a3ff0f74e22e3fca51a9c9457",
+        "第5-10章核心知识点总结.md": "2627ea1aae66a67d7308e827b14e78cb7e7b409fc4c7e299040ab7f26b1594d6",
+        "第5章_信息系统工程_快速复习卡片.md": "36003dbaeb48b6837828351ecfe059b4cf8458e490a53ce7987ad870530db881",
+        "第5章_信息系统工程_考试知识点.md": "5b4865676f33a2ab9fccafe3ee3ab8861a1ed1d3663a9ca92be9cf86bbcca7a8",
+        "软考高项-10 周冲刺计划.md": "f05fc09c97c57913c0810fcc854794c75de9c05117d67025f09d0e442d13fb0d",
+        "软考高项-67 天定制计划.md": "5d2e1072bd9b3165b86dac35c0e90998bd70bd77eacbb83f6dfcc0a3628aa4ac",
+        "软考高项-67 天详细复习计划表.md": "fecb5f528f2552e7994fe07e0e13febd46312802fc0dce46543af0de62d2acbb",
+        "软考高项学习计划.md": "a08c391aa2372112c0f1b6f8bdbd14c08e5556013a5aa3d833a7ec3630a28615",
+        "项目进度管理_快速复习卡片.md": "dcf87a393c7c4d9d0eb21fcd08a35652ab6ef9658d43f59e65eb1bec7742b7cc",
+        "项目进度管理_考试知识点.md": "7c103d3f84b096b3062a46d8a49485e963a759e4e1b21874e688e25ed4ceb965"
+      }
+    }
+  ],
+  "files_history": {
+    ".trash/2026-03-22.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    ],
+    "AGENTS.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "3ecae6a107899f284728bf1aa406c75d141773f9f380ba39ba378b5e9fa28f4c",
+        "size": 7874
+      }
+    ],
+    "BOOTSTRAP.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "5c4cb81099167dc7901bf16d7d4b8fd4bdbb37d2ec57437952f9409f19b88e39",
+        "size": 1470
+      }
+    ],
+    "HEARTBEAT.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "dac422286075ba178e9bae58154cc0ae8749a66854e438c9c58e8eb91f22c126",
+        "size": 168
+      }
+    ],
+    "IDENTITY.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "1379f924cf4b4d6d0a306ecc2544a913dab706a1325fcf8eb9b267686ee8551c",
+        "size": 636
+      }
+    ],
+    "MEMORY.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "f004530a81d59e8bdaf31157c0089d330c89396f729771027affb837034a22fe",
+        "size": 2811
+      }
+    ],
+    "Obsidian-Git-集成指南.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "880d589bfd93600b9faab359688786bede8ca28c3b81c2b49531f18b325bdf42",
+        "size": 4830
+      }
+    ],
+    "Obsidian-关系图谱分析报告.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "ee12928e9a62cb2169aa0d7eb50cb0ea7bcde19e228b0da7d236dc9e199b42d9",
+        "size": 3378
+      }
+    ],
+    "Obsidian-工作空间关联指南.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "0784be337194dc14593be3cc58dc7536e0e07973b0e2425af189a5b92f7dd6db",
+        "size": 3850
+      }
+    ],
+    "OpenClaw 完全安装指南.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "b1e1fe7e5800b6da80e29e69c962d71aeafaf3ab1737aaf716936813a36aa72a",
+        "size": 16144
+      }
+    ],
+    "OpenClaw_防止睡眠指南.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "24044bd38afb742ee258d41a514f2c6fa7957e1e64dd1cb8ed59a4f7a182bac3",
+        "size": 4226
+      }
+    ],
+    "PDF拆分指南.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "fe0c47a6efb70731301f11e250e9bc6a34b778b006fe245cb577737da21bac79",
+        "size": 3533
+      }
+    ],
+    "README-Obsidian-Git.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "d0a176974a3991abf01572dbb6baa228acf576274a780293efafe685ea83f74e",
+        "size": 2206
+      }
+    ],
+    "SOUL.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "95c467f710183b2c0397c29ec4ef886bb723671a39ee767dc4d59165f723b68f",
+        "size": 1673
+      }
+    ],
+    "TOOLS.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "78f3e26b8625ea283c615cec291d4978da5f9f01df730628c5c42094418b8dc2",
+        "size": 860
+      }
+    ],
+    "USER.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "178a5807bd2e6ace25b80a366f0f7d8d3f354a47f577c4ab0092397456b8738f",
+        "size": 477
+      }
+    ],
+    "memory/2026-03-14.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "97a300b01863d69c7df718bf7a7703e6468e8d305e308b7b4eb1c88c71c376a6",
+        "size": 2949
+      }
+    ],
+    "memory/siri-messages.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "0d7f830a0a7d5e519ed5d195d62fd4c03f07cf217537ef997f2f00bb832428c0",
+        "size": 378
+      }
+    ],
+    "pdf-split-skill/README.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "60daf1e2e02be13c19c96be4961c0b5367b7dc3cf85b266d1b451a510f289a27",
+        "size": 2847
+      }
+    ],
+    "pdf-split-skill/SKILL.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "1603c0c948cdb0329347e83c9b0a1718844669df627977870fa08ea4f0a2b1bd",
+        "size": 1373
+      }
+    ],
+    "skills/ruankao-helper/SKILL.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "fe8e544222c8266e5986d98da596d97190fbac92a5061a71da438214de57679c",
+        "size": 7577
+      }
+    ],
+    "skills/using-superpowers/SKILL.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "7d392283c4932ca5c0c50bd8469ab513622428eb28a7606ed6b4788a399e9f6d",
+        "size": 10741
+      }
+    ],
+    "七支坐法与数息观详解.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "c254413bac2e7decba706c32de62a4784563dae4cf963d81caad5302bd41d83d",
+        "size": 19814
+      }
+    ],
+    "信息系统项目管理师错题本.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "561d035c83d78cc7492ed1842169a00855d360cfbb100b7f3c2e7ddca6b8127b",
+        "size": 8683
+      }
+    ],
+    "关系图谱工具汇总.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "7e03e37a3b4cda15ab6917f2332e93c113816d5dc62ad274048cea08afb316ff",
+        "size": 5252
+      }
+    ],
+    "存档系统说明.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "7f172b550c23a2618d89466f98d7839496aa2e2d638c0b20f75ffd21ad381f39",
+        "size": 2448
+      }
+    ],
+    "按章节拆分结果/官方教材章节索引.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "54c1d061521a1d0e6f9bf3961cf9c177d83df2c9cc4fd909e3c4870d66178690",
+        "size": 4424
+      }
+    ],
+    "查看隐藏文件指南.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "56feafd1e77613c61f850cec49feaa93ce4ddddda184173fb5c38e27e5cec73d",
+        "size": 3322
+      }
+    ],
+    "知识演化跟踪系统指南.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "3a926c97b16d7c4fa64f610b898a68072831dd7b078dcfd89f81689cafef1215",
+        "size": 10723
+      }
+    ],
+    "禅宗修炼指南.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "4f3f55d0ca2d60c253487e36ea4d6ede31e3e76f4a65ef936ab299b758539878",
+        "size": 6292
+      }
+    ],
+    "禅宗实践指导手册.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "6c4a3d28581644cafdbfef471eae342290731c18ea7ee2fb28f688259174610e",
+        "size": 11506
+      }
+    ],
+    "禅宗话头参究详解.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "35b7636025acc0c28ab0385810d5fe52a253bc0bcd2d60c83560014664aea23f",
+        "size": 15686
+      }
+    ],
+    "第1-2章学习资料+练习题.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "f095aac12cf4ef55772d1a124217eda82e2690bdf4964b9aaa310786159fab9a",
+        "size": 13722
+      }
+    ],
+    "第11-18章核心知识点总结.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "d482bd970594117236cea588d2eac1155cb0552105cd3e7bdb32f9343c95a94d",
+        "size": 18403
+      }
+    ],
+    "第19-24章核心知识点总结.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "41df45f876d832de541ced2bf28de9e7049296995cc9da5dda965d0f805a80b1",
+        "size": 16851
+      }
+    ],
+    "第3-4章学习资料+练习题.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "366d7ac41e472ae4e8b7417b1909439248cb609a3ff0f74e22e3fca51a9c9457",
+        "size": 14147
+      }
+    ],
+    "第5-10章核心知识点总结.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "2627ea1aae66a67d7308e827b14e78cb7e7b409fc4c7e299040ab7f26b1594d6",
+        "size": 13133
+      }
+    ],
+    "第5章_信息系统工程_快速复习卡片.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "36003dbaeb48b6837828351ecfe059b4cf8458e490a53ce7987ad870530db881",
+        "size": 4147
+      }
+    ],
+    "第5章_信息系统工程_考试知识点.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "5b4865676f33a2ab9fccafe3ee3ab8861a1ed1d3663a9ca92be9cf86bbcca7a8",
+        "size": 16758
+      }
+    ],
+    "软考高项-10 周冲刺计划.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "f05fc09c97c57913c0810fcc854794c75de9c05117d67025f09d0e442d13fb0d",
+        "size": 7674
+      }
+    ],
+    "软考高项-67 天定制计划.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "5d2e1072bd9b3165b86dac35c0e90998bd70bd77eacbb83f6dfcc0a3628aa4ac",
+        "size": 11503
+      }
+    ],
+    "软考高项-67 天详细复习计划表.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "fecb5f528f2552e7994fe07e0e13febd46312802fc0dce46543af0de62d2acbb",
+        "size": 18579
+      }
+    ],
+    "软考高项学习计划.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "a08c391aa2372112c0f1b6f8bdbd14c08e5556013a5aa3d833a7ec3630a28615",
+        "size": 8858
+      }
+    ],
+    "项目进度管理_快速复习卡片.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "dcf87a393c7c4d9d0eb21fcd08a35652ab6ef9658d43f59e65eb1bec7742b7cc",
+        "size": 2924
+      }
+    ],
+    "项目进度管理_考试知识点.md": [
+      {
+        "timestamp": "2026-03-22T15:23:31.141706",
+        "fingerprint": "7c103d3f84b096b3062a46d8a49485e963a759e4e1b21874e688e25ed4ceb965",
+        "size": 7908
+      }
+    ]
+  }
+}
