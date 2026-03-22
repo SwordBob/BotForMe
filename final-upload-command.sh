@@ -10,22 +10,16 @@ echo "🚀 GitHub 最终上传命令"
 echo "========================================"
 echo ""
 
-# 检查参数
-if [ $# -eq 0 ]; then
-    echo "❌ 错误: 需要提供 GitHub 用户名"
-    echo ""
-    echo "使用方法:"
-    echo "  ./final-upload-command.sh YOUR_GITHUB_USERNAME"
-    echo ""
-    echo "例如:"
-    echo "  ./final-upload-command.sh niejq"
-    echo ""
-    echo "或者直接设置用户名:"
-    echo "  GITHUB_USER=\"niejq\" ./final-upload-command.sh"
-    exit 1
-fi
+# 使用 SwordBob 作为默认用户名
+GITHUB_USER="SwordBob"
 
-GITHUB_USER="$1"
+# 如果提供了参数，使用参数
+if [ $# -gt 0 ]; then
+    GITHUB_USER="$1"
+    echo "使用指定用户名: $GITHUB_USER"
+else
+    echo "使用默认用户名: $GITHUB_USER"
+fi
 REPO_NAME="BotForMe"
 REMOTE_URL="https://github.com/$GITHUB_USER/$REPO_NAME.git"
 
