@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.niejq.knowledge-maintenance</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/niejq/.openclaw/workspace/scripts/weekly-knowledge-maintenance.sh</string>
+    </array>
+    
+    <key>WorkingDirectory</key>
+    <string>/Users/niejq/.openclaw/workspace</string>
+    
+    <key>StandardOutPath</key>
+    <string>/Users/niejq/.openclaw/workspace/knowledge-maintenance-logs/launchd.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>/Users/niejq/.openclaw/workspace/knowledge-maintenance-logs/launchd-error.log</string>
+    
+    <key>StartCalendarInterval</key>
+    <dict>
+        <!-- 每周日早上9点执行 -->
+        <key>Weekday</key>
+        <integer>0</integer>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    
+    <key>RunAtLoad</key>
+    <false/>
+    
+    <key>KeepAlive</key>
+    <false/>
+    
+    <key>ProcessType</key>
+    <string>Background</string>
+    
+    <key>LowPriorityIO</key>
+    <true/>
+    
+    <key>Nice</key>
+    <integer>10</integer>
+    
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>PYTHONPATH</key>
+        <string>/Users/niejq/.openclaw/workspace</string>
+        <key>LANG</key>
+        <string>zh_CN.UTF-8</string>
+    </dict>
+    
+    <key>ThrottleInterval</key>
+    <integer>3600</integer>
+    
+    <key>ExitTimeOut</key>
+    <integer>300</integer>
+    
+    <key>Debug</key>
+    <true/>
+</dict>
+</plist>
