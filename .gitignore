@@ -1,0 +1,58 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# OpenClaw specific
+.openclaw/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.so
+
+# PDF split results (can be large)
+按章节拆分结果/
+
+# Temporary files
+*.tmp
+*.temp
+test_*
+debug_*
+
+# Large PDF files (already tracked separately)
+*.pdf
+
+# Logs
+*.log
+
+# Environment files
+.env
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Obsidian
+.obsidian/workspace
+.obsidian/workspace.json
