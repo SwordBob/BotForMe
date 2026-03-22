@@ -170,6 +170,10 @@
   },
   "active": "aa70120fc3c6f1b5",
   "lastOpenFiles": [
+    "一键推送GitHub.sh",
+    "complete-github-push.sh",
+    "GITHUB_PUSH_SUCCESS.md",
+    "文件同步报告.md",
     "文件清单报告.md",
     "测试关系图谱文件.md",
     "SwordBob-上传到GitHub.sh",
@@ -186,7 +190,6 @@
     "check-maintenance-status.sh",
     "knowledge-maintenance-now.sh",
     "knowledge-maintenance-logs/weekly-2026-03-22.log",
-    "knowledge-backups",
     "knowledge-evolution-reports/knowledge-evolution-2026-03-22.md",
     "知识演化跟踪系统指南.md",
     "memory/2026-03-14.md",
