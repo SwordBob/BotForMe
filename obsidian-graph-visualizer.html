@@ -1,0 +1,213 @@
+        // 处理鼠标悬停
+        function handleMouseOver(event, d) {
+            // 高亮当前节点和连接
+            nodes.style('opacity', n => {
+                return n.id === d.id || 
+                       graphData.links.some(l => 
+                           (l.source.id === d.id && l.target.id === n.id) ||
+                           (l.target.id === d.id && l.source.id === n.id)
+                       ) ? 1 : 0.2;
+            });
+            
+            links.style('opacity', l => {
+                return l.source.id === d.id || l.target.id === d.id ? 1 : 0.1;
+            });
+            
+            // 显示工具提示
+            const tooltip = d3.select('body').append('div')
+                .attr('class', 'tooltip')
+                .style('opacity', 0);
+            
+            tooltip.transition()
+                .duration(200)
+                .style('opacity', 0.9);
+            
+            tooltip.html(`
+                <strong>${d.name}</strong><br/>
+                分类: ${d.category}<br/>
+                字数: ${d.word_count}<br/>
+                关键词: ${d.keywords ? d.keywords.join(', ') : '无'}
+            `)
+            .style('left', (event.pageX + 10) + 'px')
+            .style('top', (event.pageY - 28) + 'px');
+            
+            // 保存工具提示引用
+            event.target.__tooltip = tooltip;
+        }
+        
+        // 处理鼠标移出
+        function handleMouseOut(event, d) {
+            // 恢复所有节点和链接
+            nodes.style('opacity', 1);
+            links.style('opacity', 0.6);
+            
+            // 移除工具提示
+            if (event.target.__tooltip) {
+                event.target.__tooltip.transition()
+                    .duration(500)
+                    .style('opacity', 0)
+                    .remove();
+            }
+        }
+        
+        // 处理节点点击
+        function handleNodeClick(event, d) {
+            selectedNode = d;
+            updateFileInfo(d);
+        }
+        
+        // 更新文件信息面板
+        function updateFileInfo(node) {
+            const infoDiv = document.getElementById('selected-file');
+            
+            // 查找相关连接
+            const relatedLinks = graphData.links.filter(l => 
+                l.source.id === node.id || l.target.id === node.id
+            );
+            
+            const relatedNodes = relatedLinks.map(l => 
+                l.source.id === node.id ? l.target : l.source
+            );
+            
+            // 构建信息 HTML
+            let html = `
+                <h3>📄 ${node.name}</h3>
+                <p><strong>文件名:</strong> ${node.filename}</p>
+                <p><strong>分类:</strong> ${node.category}</p>
+                <p><strong>字数:</strong> ${node.word_count}</p>
+            `;
+            
+            if (node.all_categories && node.all_categories.length > 0) {
+                html += `<p><strong>所有分类:</strong> `;
+                html += node.all_categories.map(cat => 
+                    `<span class="category-tag">${cat}</span>`
+                ).join(' ');
+                html += `</p>`;
+            }
+            
+            if (node.keywords && node.keywords.length > 0) {
+                html += `<p><strong>关键词:</strong><br/>`;
+                html += node.keywords.map(kw => 
+                    `<span class="keyword">${kw}</span>`
+                ).join(' ');
+                html += `</p>`;
+            }
+            
+            if (relatedNodes.length > 0) {
+                html += `<div class="connections">
+                    <p><strong>关联文件 (${relatedNodes.length}个):</strong></p>`;
+                
+                relatedNodes.slice(0, 10).forEach(related => {
+                    const link = relatedLinks.find(l => 
+                        l.source.id === node.id && l.target.id === related.id ||
+                        l.target.id === node.id && l.source.id === related.id
+                    );
+                    
+                    html += `
+                        <div class="connection-item">
+                            <strong>${related.name}</strong><br/>
+                            相似度: ${link ? link.value.toFixed(2) : 'N/A'}<br/>
+                            分类: ${related.category}
+                        </div>
+                    `;
+                });
+                
+                if (relatedNodes.length > 10) {
+                    html += `<p>... 还有 ${relatedNodes.length - 10} 个关联文件</p>`;
+                }
+                
+                html += `</div>`;
+            }
+            
+            infoDiv.innerHTML = html;
+        }
+        
+        // 拖动函数
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+        
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+        
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+        
+        // 连接强度阈值控制
+        document.getElementById('link-threshold').addEventListener('input', function() {
+            const threshold = parseFloat(this.value);
+            document.getElementById('threshold-value').textContent = threshold.toFixed(1);
+            
+            links.style('opacity', d => d.value >= threshold ? 0.6 : 0.1);
+        });
+        
+        // 节点大小控制
+        document.getElementById('node-size').addEventListener('change', function() {
+            const basis = this.value;
+            
+            nodes.attr('r', d => {
+                switch(basis) {
+                    case 'word_count':
+                        return Math.min(50, Math.max(10, d.word_count / 200));
+                    case 'connections':
+                        // 计算连接数
+                        const connections = graphData.links.filter(l => 
+                            l.source.id === d.id || l.target.id === d.id
+                        ).length;
+                        return Math.min(50, Math.max(10, connections * 5));
+                    case 'fixed':
+                        return 20;
+                    default:
+                        return d.size;
+                }
+            });
+        });
+        
+        // 重置视图
+        document.getElementById('reset-view').addEventListener('click', function() {
+            simulation.alpha(1).restart();
+            
+            // 重置所有控制
+            document.getElementById('category-filter').value = 'all';
+            document.getElementById('link-threshold').value = 3;
+            document.getElementById('threshold-value').textContent = '3.0';
+            document.getElementById('node-size').value = 'word_count';
+            
+            // 重置显示
+            nodes.style('opacity', 1);
+            links.style('opacity', 0.6);
+            
+            // 清除选中
+            selectedNode = null;
+            document.getElementById('selected-file').innerHTML = `
+                <h3>👆 点击节点查看详情</h3>
+                <p>点击图谱中的节点查看文件详细信息</p>
+            `;
+        });
+        
+        // 窗口大小调整
+        window.addEventListener('resize', function() {
+            const graphDiv = document.getElementById('graph');
+            const width = graphDiv.clientWidth;
+            const height = graphDiv.clientHeight;
+            
+            d3.select('#graph svg')
+                .attr('width', width)
+                .attr('height', height);
+            
+            simulation.force('center', d3.forceCenter(width / 2, height / 2));
+            simulation.alpha(0.3).restart();
+        });
+        
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>
