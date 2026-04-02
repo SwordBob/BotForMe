@@ -1,0 +1,31 @@
+{
+  "models": {
+    "providers": {
+      "custom-api-deepseek-com": {
+        "models": [
+          {
+            "id": "deepseek-chat",
+            "contextWindow": 64000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "custom-api-deepseek-com/deepseek-chat",
+        "fallbacks": [
+          "qwen-portal/coder-model",
+          "modelstudio/qwen3.5-plus",
+          "google/gemini-3.1-pro-preview",
+          "minimax/MiniMax-M2.7"
+        ]
+      },
+      "compaction": {
+        "mode": "safeguard"
+      }
+    }
+  }
+}

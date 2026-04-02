@@ -1,0 +1,61 @@
+{
+  "models": {
+    "providers": {
+      "custom-api-deepseek-com": {
+        "baseUrl": "https://api.deepseek.com",
+        "apiKey": "sk-03590c1a32fd455381c385172729810b",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-chat",
+            "name": "DeepSeek Chat (64k Context)",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": {
+              "input": 0.0005,
+              "output": 0.0015,
+              "cacheRead": 0.0001,
+              "cacheWrite": 0.0003
+            },
+            "contextWindow": 64000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "custom-api-deepseek-com/deepseek-chat",
+        "fallbacks": [
+          "qwen-portal/coder-model",
+          "modelstudio/qwen3.5-plus",
+          "google/gemini-3.1-pro-preview",
+          "minimax/MiniMax-M2.7"
+        ]
+      },
+      "models": {
+        "custom-api-deepseek-com/deepseek-chat": {
+          "alias": "deepseek",
+          "contextWindow": 64000,
+          "maxTokens": 8192
+        },
+        "qwen-portal/coder-model": {
+          "alias": "qwen",
+          "contextWindow": 128000
+        },
+        "modelstudio/qwen3.5-plus": {
+          "alias": "Qwen",
+          "contextWindow": 1000000
+        }
+      },
+      "compaction": {
+        "mode": "aggressive",
+        "targetRatio": 0.7,
+        "preserveRecent": 10,
+        "preserveImportant": true
+      }
+    }
+  }
+}
