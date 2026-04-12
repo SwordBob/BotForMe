@@ -57,3 +57,8 @@ ENV/
 .obsidian/workspace
 .obsidian/workspace.jsonobsidian-config
 openclaw-config
+
+# Node modules
+node_modules/
+npm-debug.log
+package-lock.json

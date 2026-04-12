@@ -1,0 +1,448 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.24",
+    "lastTouchedAt": "2026-04-02T14:56:16.684Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-02T14:56:16.617Z",
+    "lastRunVersion": "2026.3.24",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "kimi-coding:default": {
+        "provider": "kimi-coding",
+        "mode": "api_key"
+      },
+      "qwen-portal:default": {
+        "provider": "qwen-portal",
+        "mode": "oauth"
+      },
+      "custom-api-deepseek-com-2:default": {
+        "provider": "custom-api-deepseek-com-2",
+        "mode": "api_key"
+      },
+      "google:default": {
+        "provider": "google",
+        "mode": "api_key"
+      },
+      "modelstudio:default": {
+        "provider": "modelstudio",
+        "mode": "api_key"
+      },
+      "byteplus:default": {
+        "provider": "byteplus",
+        "mode": "api_key"
+      },
+      "minimax:cn": {
+        "provider": "minimax",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "qwen-portal": {
+        "baseUrl": "https://portal.qwen.ai/v1",
+        "apiKey": "qwen-oauth",
+        "api": "openai-completions",
+        "models": []
+      },
+      "custom-api-deepseek-com": {
+        "baseUrl": "https://api.deepseek.com",
+        "apiKey": "sk-03590c1a32fd455381c385172729810b",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-chat",
+            "name": "deepseek-chat (Custom Provider)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0.0005,
+              "output": 0.0015,
+              "cacheRead": 0.0001,
+              "cacheWrite": 0.0003
+            },
+            "contextWindow": 64000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-reasoner",
+            "name": "deepseek-reasoner (推理模式)",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0.001,
+              "output": 0.003,
+              "cacheRead": 0.0002,
+              "cacheWrite": 0.0006
+            },
+            "contextWindow": 32000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "modelstudio": {
+        "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3.5-plus",
+            "name": "qwen3.5-plus",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-max-2026-01-23",
+            "name": "qwen3-max-2026-01-23",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-coder-next",
+            "name": "qwen3-coder-next",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-coder-plus",
+            "name": "qwen3-coder-plus",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax-M2.5",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "glm-5",
+            "name": "glm-5",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 202752,
+            "maxTokens": 16384
+          },
+          {
+            "id": "glm-4.7",
+            "name": "glm-4.7",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 202752,
+            "maxTokens": 16384
+          },
+          {
+            "id": "kimi-k2.5",
+            "name": "kimi-k2.5",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 32768
+          }
+        ]
+      },
+      "minimax": {
+        "baseUrl": "https://api.minimaxi.com/anthropic",
+        "api": "anthropic-messages",
+        "authHeader": true,
+        "models": [
+          {
+            "id": "MiniMax-M2.7",
+            "name": "MiniMax M2.7",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0.3,
+              "output": 1.2,
+              "cacheRead": 0.06,
+              "cacheWrite": 0.375
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "minimax/MiniMax-M2.7",
+        "fallbacks": [
+          "default",
+          "qwen-portal/coder-model",
+          "qwen-portal/vision-model",
+          "custom-api-deepseek-com/deepseek-chat",
+          "custom-api-deepseek-com/deepseek-reasoner",
+          "google/gemini-3.1-pro-preview",
+          "modelstudio/qwen3.5-plus",
+          "modelstudio/qwen3-max-2026-01-23",
+          "modelstudio/qwen3-coder-next",
+          "modelstudio/qwen3-coder-plus",
+          "modelstudio/MiniMax-M2.5",
+          "modelstudio/glm-5",
+          "modelstudio/glm-4.7",
+          "modelstudio/kimi-k2.5"
+        ]
+      },
+      "models": {
+        "default": {
+          "params": {
+            "temperature": 0.7,
+            "maxTokens": 8192
+          }
+        },
+        "qwen-portal/coder-model": {
+          "alias": "qwen",
+          "params": {
+            "temperature": 0.6,
+            "maxTokens": 16384
+          }
+        },
+        "qwen-portal/vision-model": {
+          "params": {
+            "temperature": 0.5
+          }
+        },
+        "custom-api-deepseek-com/deepseek-chat": {
+          "alias": "deepseek",
+          "params": {
+            "temperature": 0.7,
+            "maxTokens": 8192,
+            "topP": 0.9,
+            "frequencyPenalty": 0.1,
+            "presencePenalty": 0.1
+          }
+        },
+        "custom-api-deepseek-com/deepseek-reasoner": {
+          "alias": "deepseek-reasoning",
+          "params": {
+            "temperature": 0.3,
+            "maxTokens": 8192,
+            "topP": 0.8,
+            "frequencyPenalty": 0.2,
+            "presencePenalty": 0.2
+          }
+        },
+        "google/gemini-3.1-pro-preview": {
+          "alias": "gemini",
+          "params": {
+            "temperature": 0.8,
+            "maxTokens": 8192
+          }
+        },
+        "modelstudio/qwen3.5-plus": {
+          "alias": "Qwen",
+          "params": {
+            "temperature": 0.6,
+            "maxTokens": 65536
+          }
+        },
+        "modelstudio/qwen3-max-2026-01-23": {
+          "params": {
+            "temperature": 0.5,
+            "maxTokens": 65536
+          }
+        },
+        "modelstudio/qwen3-coder-next": {
+          "params": {
+            "temperature": 0.4,
+            "maxTokens": 65536
+          }
+        },
+        "modelstudio/qwen3-coder-plus": {
+          "params": {
+            "temperature": 0.5,
+            "maxTokens": 65536
+          }
+        },
+        "modelstudio/MiniMax-M2.5": {
+          "params": {
+            "temperature": 0.7,
+            "maxTokens": 65536
+          }
+        },
+        "modelstudio/glm-5": {
+          "params": {
+            "temperature": 0.6,
+            "maxTokens": 16384
+          }
+        },
+        "modelstudio/glm-4.7": {
+          "params": {
+            "temperature": 0.6,
+            "maxTokens": 16384
+          }
+        },
+        "modelstudio/kimi-k2.5": {
+          "params": {
+            "temperature": 0.5,
+            "maxTokens": 32768
+          }
+        },
+        "minimax/MiniMax-M2.7": {
+          "alias": "Minimax",
+          "params": {
+            "temperature": 0.7,
+            "maxTokens": 131072
+          }
+        }
+      },
+      "compaction": {
+        "mode": "default"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "hooks": {
+    "enabled": true,
+    "token": "siri-webhook-token-12345"
+  },
+  "channels": {
+    "openclaw-weixin": {
+      "accounts": {}
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "9ad39e736394e06050aa2538f197ec6928ae7e2a69a8ab2c"
+    }
+  },
+  "skills": {
+    "load": {
+      "extraDirs": [
+        "/Users/niejq/.openclaw/workspace/skills"
+      ]
+    }
+  },
+  "plugins": {
+    "load": {
+      "paths": []
+    },
+    "entries": {
+      "kimi-claw": {
+        "enabled": true,
+        "config": {
+          "bridge": {
+            "token": "sk-SGARVKNPFT6RXRTHLWLF2CB7QT",
+            "promptTimeoutMs": 1800000
+          }
+        }
+      },
+      "openclaw-weixin": {
+        "enabled": true
+      },
+      "qwen-portal-auth": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "openclaw-weixin": {
+        "source": "npm",
+        "spec": "@tencent-weixin/openclaw-weixin@latest",
+        "installPath": "/Users/niejq/.openclaw/extensions/openclaw-weixin",
+        "version": "2.1.2",
+        "resolvedName": "@tencent-weixin/openclaw-weixin",
+        "resolvedVersion": "2.1.2",
+        "resolvedSpec": "@tencent-weixin/openclaw-weixin@2.1.2",
+        "integrity": "sha512-eUvuBeJrJdI7T7tXNksTpE2Dm+HAwILyvnOB9YEMMBU8AzN5cVnPSIf0TMx2D+jFsW2pZzCAYy9fWQ6S1+VqFw==",
+        "shasum": "a3ddab0a1947b0e08f53495fa6bc40591077bda7",
+        "resolvedAt": "2026-04-01T16:01:46.873Z",
+        "installedAt": "2026-04-01T16:01:56.712Z"
+      }
+    }
+  }
+}

@@ -6,12 +6,17 @@
 - **设备**：Mac (Darwin 25.3.0 arm64)
 - **工作目录**：`/Users/niejq/.openclaw/workspace`
 
+## 🤖 关于我自己
+- **名字**：Claw
+- **风格**：温暖、靠谱、直接。不是一个冷冰冰的机器人，而是站在用户这边的高手朋友。
+- **标志 emoji**：🤖
+
 ## 🛠️ 技术配置偏好
 ### 模型选择策略
-- **主模型**：Qwen Coder（`qwen-portal/coder-model`）- 优先使用
-- **备用模型**：DeepSeek V3（成本最低）
+- **主模型**：MiniMax-M2.7（当前在用）
+- **备用模型**：千问（qwen-portal/coder-model）、DeepSeek V3
 - **避免使用**：Kimi（价格最贵）
-- **决策依据**：千问模型可用时优先使用，享受 128k 大上下文窗口
+- **决策依据**：2026-04-11 更新，MiniMax-M2.7 有 204k 上下文、推理能力，且用户已订阅 HighSpeed
 
 ### 成本意识
 - 用户关注 API 使用成本
@@ -29,12 +34,16 @@
 ### OpenClaw 配置
 - 配置文件：`~/.openclaw/openclaw.json`
 - 使用 Qwen Portal OAuth 模式
-- 当前会话使用 DeepSeek API
+- 当前会话使用 MiniMax-M2.7 API
 
 ## 🧘 个人修行
 - **禅宗修炼**：用户有禅修实践，相关笔记在 vault 中形成独立闭环
 - **笔记文件**：`禅宗修炼指南.md`（核心入口）、`七支坐法与数息观详解.md`、`禅宗话头参究详解.md`、`禅宗实践指导手册.md`
 - **特点**：与主笔记体系（软考学习）完全隔离，是独立知识域
+
+## 📧 联系方式
+- **邮箱**：niejingqin@gmail.com
+- **LinkedIn**：未提供具体URL（与邮箱关联）
 
 ## 🎵 音乐偏好
 - 对 K-Pop 和欧美流行音乐感兴趣
@@ -96,6 +105,21 @@
 3. **Vault 配置**：默认 vault 设为 `.openclaw/workspace`（vault id: c970f4a57958646e）
 4. **笔记关系图谱**：分析了 vault 内 ~120+ 笔记的关联关系，发现章节详细笔记存在链接断层，已修复
 5. **禅宗域入口**：在 MEMORY.md 中添加了禅宗域的说明，方便跨域导航
+
+## 🌐 Web 获取策略（2026-04-12 新增）
+### 搜索引擎优先级
+- **首选**：cn.bing.com（Bing 中国，可正常访问）
+- **原因**：DuckDuckGo/Brave API 在此机器不可达
+
+### 内容获取对比规则
+- **遇到 JS 渲染页面时**：优先用 `agent-browser`，因为 `web_fetch`/`curl` 只能获取空壳 HTML
+- **两种方式都要用时**：比较获取到的内容完整性，选择更好的
+- **典型场景**：百度搜索结果、微博、B站等 JS 重度页面必须用 `agent-browser`
+- **纯接口 API 页面**：可以用 `curl`/`web_fetch`（速度快、资源少）
+
+### SSRF 限制说明
+- `web_fetch` 受 SSRF 安全策略阻止（服务器端请求）
+- `agent-browser` 是本地浏览器客户端请求，不受 SSRF 限制
 
 ## ⚠️ 注意事项
 - 上下文窗口较小（16k），需要定期存档
