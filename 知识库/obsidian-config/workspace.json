@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "77097575422940e7",
+        "id": "0657f0ac6b33abff",
         "type": "tabs",
         "children": [
           {
-            "id": "33a6555853a2794d",
+            "id": "9cf2748c945c7953",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -70,8 +70,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -165,44 +164,44 @@
       "bases:新建数据库": false
     }
   },
-  "active": "33a6555853a2794d",
+  "active": "9cf2748c945c7953",
   "lastOpenFiles": [
-    "第1-2章知识点+练习题.md",
-    "第5章_信息系统工程_模拟考题.md",
-    "批改考题_第8章.sh",
-    "第 3-4 章学习资料 + 练习题.md",
-    "第 1-2 章学习资料 + 练习题.md",
-    "README.md",
-    "第 1-2 章知识点 + 练习题.md",
-    "第19-24章核心知识点总结.md",
-    "软考高项_第14章_项目沟通管理_详细知识点总结.md",
-    "第 5-10 章核心知识点总结.md",
-    "批改结果_第10章_详细报告.md",
-    "state",
-    "openclaw.backup.json",
-    "memory/interview-2026-04-05.md",
-    "skills/word-docx/_meta.json",
-    "skills/word-docx/SKILL.md",
-    "skills/word-docx",
-    "knowledge-maintenance-logs/weekly-2026-04-05.log",
-    "职业规划_备考与求职计划.md",
-    "第10-11章_答题卡.md",
-    "批改考题_第10-11章_综合考题.md",
-    "skills/self-improving-agent/hooks/openclaw/handler.ts",
-    "skills/self-improving-agent/hooks/openclaw/handler.js",
-    "skills/self-improving-agent/hooks/openclaw/HOOK.md",
-    "skills/self-improving-agent/scripts/extract-skill.sh",
-    "skills/self-improving-agent/scripts/error-detector.sh",
-    "skills/self-improving-agent/references/openclaw-integration.md",
-    "skills/self-improving-agent/references/hooks-setup.md",
-    "skills/self-improving-agent/references/examples.md",
-    "skills/self-improving-agent/assets/SKILL-TEMPLATE.md",
-    "skills/self-improving-agent/assets/LEARNINGS.md",
-    "skills/self-improving-agent/assets/FEATURE_REQUESTS.md",
-    "skills/self-improving-agent/assets/ERRORS.md",
-    "skills/self-improving-agent/SKILL.md",
-    "skills/notes/tracking.md",
-    "skills/notes/setup.md",
+    "技能/pdf-split-skill/split_pdf.py",
+    "技能/pdf-split-skill/requirements.txt",
+    "技能/pdf-split-skill/SKILL.md",
+    "技能/pdf-split-skill/README.md",
+    "技能/pdf-split-skill",
+    "技能/skills/self-improving-agent/hooks/openclaw/handler.ts",
+    "技能/skills/self-improving-agent/hooks/openclaw/handler.js",
+    "技能/skills/self-improving-agent/hooks/openclaw/HOOK.md",
+    "技能/skills/self-improving-agent/scripts/extract-skill.sh",
+    "技能/skills/self-improving-agent/scripts/error-detector.sh",
+    "技能/skills/self-improving-agent/scripts/activator.sh",
+    "技能/skills/self-improving-agent/references/openclaw-integration.md",
+    "技能/skills/self-improving-agent/references/hooks-setup.md",
+    "技能/skills/self-improving-agent/references/examples.md",
+    "技能/skills/self-improving-agent/hooks/openclaw",
+    "技能/skills/self-improving-agent/assets/SKILL-TEMPLATE.md",
+    "技能/skills/self-improving-agent/assets/LEARNINGS.md",
+    "技能/skills/self-improving-agent/assets/FEATURE_REQUESTS.md",
+    "技能/skills/self-improving-agent/assets/ERRORS.md",
+    "技能/skills/obsidian-ontology-sync/scripts/sync.py",
+    "技能/skills/a-stock-quant/scripts/选股系统.py",
+    "技能/skills/word-docx/SKILL.md",
+    "技能/skills/using-superpowers/SKILL.md",
+    "技能/skills/self-improving-agent/SKILL.md",
+    "技能/skills/ruankao-helper/SKILL.md",
+    "技能/skills/qmd-markdown-search/SKILL.md",
+    "技能/skills/qmd-markdown-search/README.md",
+    "技能/skills/obsidian-ontology-sync/SKILL.md",
+    "技能/skills/obsidian-ontology-sync/README.md",
+    "技能/skills/obsidian/SKILL.md",
+    "技能/skills/notes/tracking.md",
+    "技能/skills/notes/setup.md",
+    "技能/skills/notes/obsidian.md",
+    "技能/skills/notes/notion.md",
+    "技能/skills/notes/memory-template.md",
+    "技能/skills/notes/local.md",
     "web_triangle_issue.png",
     "未命名.canvas"
   ]

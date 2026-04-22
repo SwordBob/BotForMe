@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "obsidian-ontology-sync": {
+      "version": "1.0.1",
+      "installedAt": 1776741544398
+    },
+    "qmd-markdown-search": {
+      "version": "1.0.0",
+      "installedAt": 1776741607372
+    }
+  }
+}
